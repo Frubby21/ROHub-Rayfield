@@ -63,12 +63,12 @@ local LaunchSirius/Home = Home:CreateButton({
    })
 
 
-local Information = Window:CreateTab("Information", 0) -- Title, Image
+local Information = Window:CreateTab("Information") -- Title, Image
 
 local Paragraph = Information:CreateParagraph({Title = "Credits", Content = "ROHub (Stable/Beta) is owned by Flobby25. This uses multiple open-source code, such as Rayfield Interface by Sirius, and Infinite Yield as the primary script. The comsumer is not to edit the script, unless they know the base of the Rayfield library. (docs.sirius.menu/rayfield). You may add other components, but not edit existing ones. All ROHub (Original Code) made by Flobby25, this version is based on Rayfield and runs other scripts. ScriptBlox's search API will be added in future."})
 
 
-local Settings = Window:CreateTab("Settings", 0) -- Title, Image
+local Settings = Window:CreateTab("Settings") -- Title, Image
 
 local Button = Settings:CreateButton({
    Name = "Close ROHub",
@@ -86,4 +86,5 @@ Rayfield:Destroy()
    end,
 
 })
+
 
