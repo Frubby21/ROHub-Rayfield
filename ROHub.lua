@@ -54,13 +54,6 @@ local Button = Home:CreateButton({
    end,
 })
 
-local Button = Home:CreateButton({
-   Name = "Launch Sirius",
-   Callback = function()
-   loadstring(game:HttpGet("https://sirius.menu/sirius"))()
-   end,
-})
-
 local Settings = Window:CreateTab("Settings") -- Title, Image
 
 local Button = Settings:CreateButton({
@@ -76,6 +69,7 @@ wait(2)
 Rayfield:Destroy()
    end,
 })
+
 
 
 
