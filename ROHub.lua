@@ -56,7 +56,7 @@ local Button = Home:CreateButton({
 local Button = Home:CreateButton({
       Name = "Launch Sirius"
       Callback = function()
-         loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+      loadstring(game:HttpGet('https://sirius.menu/sirius'))()
       end,
    })
 
@@ -82,6 +82,7 @@ Rayfield:Destroy()
 
    end,
 })
+
 
 
 
