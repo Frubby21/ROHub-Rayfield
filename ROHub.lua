@@ -38,6 +38,13 @@ local Window = Rayfield:CreateWindow({
 })
 print("Loaded Rayfield and ROHub.")
 
+Rayfield:Notify({
+   Title = "Opened ROHub Successfully",
+   Content = "To completely close ROHub, head to the Settings tab, and press Close Rayfield Interface.",
+   Duration = 3,
+   Image = "tick",
+})
+
 local Home = Window:CreateTab("Home", "home") -- Title, Image
 
 local Button = Home:CreateButton({
@@ -48,9 +55,9 @@ local Button = Home:CreateButton({
 })
 
 local Button = Home:CreateButton({
-   Name = "Launch Sirius"
+   Name = "Launch Sirius",
    Callback = function()
-   loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+   loadstring(game:HttpGet("https://sirius.menu/sirius"))()
    end,
 })
 
@@ -67,9 +74,9 @@ local Button = Settings:CreateButton({
 })
 wait(2)
 Rayfield:Destroy()
-
    end,
 })
+
 
 
 
