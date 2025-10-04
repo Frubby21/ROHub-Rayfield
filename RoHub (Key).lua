@@ -48,13 +48,19 @@ local Home = Window:CreateTab("Home", "home") -- Title, Image
 
 
 
-local Button = Home:CreateButton({
+local LaunchIY/Home = Home:CreateButton({
    Name = "Launch IY (Infinite Yield)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
    end,
 })
 
+local LaunchSirius/Home = Home:CreateButton({
+      Name = "Launch Sirius"
+      Callback = function()
+         loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+      end,
+   })
 
 
 local Information = Window:CreateTab("Information", 0) -- Title, Image
@@ -80,3 +86,4 @@ Rayfield:Destroy()
    end,
 
 })
+
