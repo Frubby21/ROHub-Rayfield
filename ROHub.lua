@@ -36,13 +36,7 @@ local Window = Rayfield:CreateWindow({
       Key = {"NONE"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-
-    Rayfield:Notify({
-   Title = "Opened ROHub Successfully",
-   Content = "To completely close ROHub, head to the Settings tab, and press Close Rayfield Interface.",
-   Duration = 3,
-   Image = "tick",
-})
+print("Loaded Rayfield and ROHub.")
 
 local Home = Window:CreateTab("Home", "home") -- Title, Image
 
@@ -54,17 +48,11 @@ local Button = Home:CreateButton({
 })
 
 local Button = Home:CreateButton({
-      Name = "Launch Sirius"
-      Callback = function()
-      loadstring(game:HttpGet('https://sirius.menu/sirius'))()
-      end,
-   })
-
-
-local Information = Window:CreateTab("Information") -- Title, Image
-
-local Paragraph = Information:CreateParagraph({Title = "Credits", Content = "ROHub (Stable/Beta) is owned by Flobby25. This uses multiple open-source code, such as Rayfield Interface by Sirius, and Infinite Yield as the primary script. The comsumer is not to edit the script, unless they know the base of the Rayfield library. (docs.sirius.menu/rayfield). You may add other components, but not edit existing ones. All ROHub (Original Code) made by Flobby25, this version is based on Rayfield and runs other scripts. ScriptBlox's search API will be added in future."})
-
+   Name = "Launch Sirius"
+   Callback = function()
+   loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+   end,
+})
 
 local Settings = Window:CreateTab("Settings") -- Title, Image
 
@@ -82,6 +70,7 @@ Rayfield:Destroy()
 
    end,
 })
+
 
 
 
