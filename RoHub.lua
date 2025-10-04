@@ -46,8 +46,6 @@ local Window = Rayfield:CreateWindow({
 
 local Home = Window:CreateTab("Home", "home") -- Title, Image
 
-
-
 local LaunchIY/Home = Home:CreateButton({
    Name = "Launch IY (Infinite Yield)",
    Callback = function()
@@ -73,18 +71,17 @@ local Settings = Window:CreateTab("Settings") -- Title, Image
 local Button = Settings:CreateButton({
    Name = "Close ROHub",
    Callback = function()
-
     Rayfield:Notify({
    Title = "Closing ROHub",
    Content = "To reopen ROHub, you need to re-run the script.",
-   Duration = 7,
+   Duration = 1.5,
    Image = "x",
 })
-
+wait(2)
 Rayfield:Destroy()
 
    end,
-
 })
+
 
 
